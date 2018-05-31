@@ -2027,9 +2027,9 @@ var ScrollerComponent = /** @class */ (function () {
         if (this.scrollbarV || this.scrollbarH) {
             var renderer = this.renderer;
             this.parentElement = renderer.parentNode(renderer.parentNode(this.element));
-            this.ngZone.runOutsideAngular(function () {
+            // this.ngZone.runOutsideAngular(function () {
                 _this.parentElement.addEventListener('scroll', _this.onScrolled.bind(_this));
-            });
+            // });
         }
     };
     ScrollerComponent.prototype.ngOnDestroy = function () {
